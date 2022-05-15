@@ -214,11 +214,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\C#\\taxii-webapp\\Taxii\\Taxii.csproj",
+      "projectUniqueName": "C:\\Projects\\C#\\taxii-webapp\\Taxii.csproj",
       "projectName": "Taxii",
-      "projectPath": "C:\\Projects\\C#\\taxii-webapp\\Taxii\\Taxii.csproj",
+      "projectPath": "C:\\Projects\\C#\\taxii-webapp\\Taxii.csproj",
       "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\C#\\taxii-webapp\\Taxii\\obj\\",
+      "outputPath": "C:\\Projects\\C#\\taxii-webapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

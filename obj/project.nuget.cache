@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f3TQItG2vKN+2V5eqnLKKP+OMZwJ1wvWpu8w6KmJQho8l/xjYjJItx6B3VQo4QsLARjbHPzWv1eR9FVW44jEuw==",
+  "dgSpecHash": "dqkhKQKoKNTNTqcdtjw0xFHx3Y06HPNm+ZnTR2F0FU2hhksiQSdPmtFU8PF6R8V2qKVvSdEgLbKNzZ5Wf+X+jg==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\C#\\taxii-webapp\\Taxii\\Taxii.csproj",
+  "projectFilePath": "C:\\Projects\\C#\\taxii-webapp\\Taxii.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dmitr\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\dmitr\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
