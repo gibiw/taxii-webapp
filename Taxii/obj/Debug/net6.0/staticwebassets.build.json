@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "xV3jtje7PjewX9lRskLMyvuewob+Ys8OP59NXKvgCRI=",
+  "Source": "Taxii",
+  "BasePath": "_content/Taxii",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
