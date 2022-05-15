@@ -14,6 +14,15 @@ namespace Taxii.Controllers
         }
 
         [HttpGet()]
+        public string GetFeeds()
+        {
+            var res = "{\"max_content_length\": 1000000, \"title\": \"TAXII feeds\", \"versions\": [\"taxii - 2.0\"]}";
+
+            return res;
+        }
+
+        [HttpGet()]
+        [Route("feeds")]
         public string Get()
         {
             var res = "{\"collections\": [{\"can_read\": true,\"can_write\": false,\"description\": \"\",\"id\": \"110\",\"title\": \"Phish Tank\"},{\"can_read\": true,\"can_write\": false,\"description\": \"\",\"id\": \"67394485-b4dc-4628-b3a2-079000fee115\",\"title\": \"Abuse.ch Ransomware IPs\"}]}";
@@ -22,7 +31,7 @@ namespace Taxii.Controllers
         }
 
         [HttpGet()]
-        [Route("{id}")]
+        [Route("feeds/{id}")]
         public string GetCollection([FromRoute] string id)
         {
             switch (id) {
@@ -35,7 +44,7 @@ namespace Taxii.Controllers
         }
 
         [HttpGet()]
-        [Route("{id}/objects")]
+        [Route("feeds/{id}/objects")]
         public string GetItems([FromRoute] string id)
         {
             switch (id)
