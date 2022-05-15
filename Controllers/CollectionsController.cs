@@ -4,11 +4,11 @@ namespace Taxii.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class CollectionsController : ControllerBase
+    public class FeedsController : ControllerBase
     {
-        private readonly ILogger<CollectionsController> _logger;
+        private readonly ILogger<FeedsController> _logger;
 
-        public CollectionsController(ILogger<CollectionsController> logger)
+        public FeedsController(ILogger<FeedsController> logger)
         {
             _logger = logger;
         }
@@ -22,7 +22,7 @@ namespace Taxii.Controllers
         }
 
         [HttpGet()]
-        [Route("feeds")]
+        [Route("collections")]
         public string Get()
         {
             var res = "{\"collections\": [{\"can_read\": true,\"can_write\": false,\"description\": \"\",\"id\": \"110\",\"title\": \"Phish Tank\"},{\"can_read\": true,\"can_write\": false,\"description\": \"\",\"id\": \"67394485-b4dc-4628-b3a2-079000fee115\",\"title\": \"Abuse.ch Ransomware IPs\"}]}";
@@ -31,7 +31,7 @@ namespace Taxii.Controllers
         }
 
         [HttpGet()]
-        [Route("feeds/{id}")]
+        [Route("collections/{id}")]
         public string GetCollection([FromRoute] string id)
         {
             switch (id) {
@@ -44,7 +44,7 @@ namespace Taxii.Controllers
         }
 
         [HttpGet()]
-        [Route("feeds/{id}/objects")]
+        [Route("collections/{id}/objects")]
         public string GetItems([FromRoute] string id)
         {
             switch (id)
